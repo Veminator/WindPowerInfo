@@ -2,42 +2,36 @@
 <html lang="en">
 <head>
 
-<h1>Infographic presentation of wind power in Europe</h1>
+<h2>Infographic presentation of wind power in Europe</h2>
 <style type="text/css">
 	
 	
-	h1 {
+	h2 {
 		position: relative;
 		text-align: center;
 		font-size: 50px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		top: 35px;
+		margin-bottom: 100px;
 		
 	}
 	
-	h2 {
+	h3 {
 		
 		position: relative;
 		text-align: center;
 		font-size: 30px;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-		top: 150px;
+		top: 200px;
 	}
 	
 #slideshow {
-  margin: 50px auto;
-  position: relative;
-  width: 900px;
-  height: 670px;
-  padding: 10px;
+ display: table;
+  margin: 0 auto;
+	margin-bottom: 25px;
+		width: 43%;
 }
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-}
+ 
 #slideshow > div > img {
   width: 100%;
 }
@@ -49,13 +43,13 @@
 	
 	#counter {
 		
- position: relative;
-  bottom: 60px;
-  left: 495px;
+display: table;
+  margin-left: 29%; 
+		margin-bottom: 150px;
 font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	font-size: 19px;
 		font-weight: bold;
-	}	
+	}
 	
 	#startCycle {
 		
@@ -109,19 +103,27 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	}
 	
 	#InfoIMG {
-  position: relative;
-  height: 670px;
-		left: 510px;
-		top: 80px;
+   display: table;
+  margin: 0 auto;
+		margin-bottom: 250px;
+		width: 45%;
 		
 	}
 	
 	#PieIMG {
 		
-		position: relative;
-  height: 400px;
-		left: 700px;
-		top: 200px;
+		 display: table;
+  margin: 0 auto;
+		margin-top: 250px;
+		width: 35%;
+	}
+	
+	#Consume {
+		
+		    display: table;
+  margin: 0 auto;
+		margin-top: 250px;
+		width: 45%;
 	}
 	
 </style>
@@ -129,7 +131,7 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 <body>
 <div id="slideshow">
   <div>
-    <img name="slide" id="imgSlideshow" src="https://i.ibb.co/dKfwy90/98V3.jpg">
+    <img name="slide" id="imgSlideshow" src="https://i.ibb.co/Wv1q2gX/988.png">
   </div>
 </div>
 <div id="button">
@@ -138,40 +140,43 @@ font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
   <a href="#" id="nextBtn" onclick="return nextImage()">Next</a>
 </div>
 <div id="counter"></div>
+		
+<a href="https://ibb.co/GfwxMHz"><img id="InfoIMG" src="https://i.ibb.co/f0FzbfG/wind-2-o.png" alt="Color-codettt" border="0"></a>
 	
-<a href="https://ibb.co/Y3n7Pxh"><img id="InfoMW" src="https://i.ibb.co/vmvkSg3/PALETTE.jpg" alt="watsa" border="0"></a>
-	
-<a href="https://ibb.co/GfwxMHz"><img id="InfoIMG" src="https://i.ibb.co/StT6nys/wibd.png" alt="Color-codettt" border="0"></a>
-	
-	<h2>Renweable sources generating electicity in the EU</h2>
+	<h3>Renweable sources generating electicity in the EU</h3>
 
-<a href="https://ibb.co/X24KHG8"><img id="PieIMG" src="https://i.ibb.co/5M9SZJF/pie23.png" alt="pie23" border="0"></a>	
+<a href="https://ibb.co/X24KHG8"><img id="PieIMG" src="https://i.ibb.co/bRrx38L/CHARTPIE.png" alt="pie23" border="0"></a>
+	
+	<h3>Energy consumption per capita 2022</h3>
+
+<a href="https://ibb.co/P9Y521T"><img id="Consume" src="https://i.ibb.co/cCvNW2b/consume.png" alt="consume" border="0"></a>	
+	
 <script>
 	var imgNumber = 0;
-var path = ["https://i.ibb.co/dKfwy90/98V3.jpg",
-  "https://i.ibb.co/cD9Ldwx/99.jpg",
-  "https://i.ibb.co/Xyk5sCC/20.jpg",
-  "https://i.ibb.co/phm80j3/21.jpg",
-  "https://i.ibb.co/S06BnWd/22V3.jpg",
-  "https://i.ibb.co/3CRyTCS/23V2.jpg",
-  "https://i.ibb.co/cX3hrKp/24V2.jpg",
-  "https://i.ibb.co/3ySHtvv/25.jpg",
-  "https://i.ibb.co/MkH8L7V/26V2.jpg",
-  "https://i.ibb.co/BZCxVNF/27V2.jpg",
-  "https://i.ibb.co/Qdhx7gg/28v2.jpg",
-  "https://i.ibb.co/YhrvYwy/29.jpg",
-  "https://i.ibb.co/HtGB6Nj/210.jpg",
-  "https://i.ibb.co/Hnzfkyk/211.jpg",
-  "https://i.ibb.co/m4Lwwq8/212.jpg",
-  "https://i.ibb.co/hBX0BLS/213.jpg",
-  "https://i.ibb.co/48q1bg2/214.jpg",
-  "https://i.ibb.co/z28tkRQ/215.jpg",
-  "https://i.ibb.co/QNvT0PT/216.jpg",
-  "https://i.ibb.co/WG9MYSh/217.jpg",
-  "https://i.ibb.co/3Ygpdbm/218.jpg",
-  "https://i.ibb.co/WfCZZx7/219.jpg",
-  "https://i.ibb.co/WHNP1Wp/220.jpg",
-  "https://i.ibb.co/gjBZLXy/221.jpg"
+var path = ["https://i.ibb.co/Wv1q2gX/988.png",
+  "https://i.ibb.co/vH39B1f/999.png",
+  "https://i.ibb.co/f4y0CSN/2000000.png",
+  "https://i.ibb.co/xFmhW8G/2111.png",
+  "https://i.ibb.co/jZQQPZB/2222.png",
+  "https://i.ibb.co/x37VJPp/23333.png",
+  "https://i.ibb.co/25sx93P/244444.png",
+  "https://i.ibb.co/j5SDC47/2555555.png",
+  "https://i.ibb.co/64bdM9P/2666666.png",
+  "https://i.ibb.co/BsC2BwN/777777.png",
+  "https://i.ibb.co/ys9vFQN/8888.png",
+  "https://i.ibb.co/jHchqGx/9999.png",
+  "https://i.ibb.co/7W2zkf9/100000.png",
+  "https://i.ibb.co/2Zh9ZDW/111.png",
+  "https://i.ibb.co/PFB5RMm/1222.png",
+  "https://i.ibb.co/60V4cb0/1333.png",
+  "https://i.ibb.co/xfkxzwL/201444.png",
+  "https://i.ibb.co/Z1kwSCT/2155.png",
+  "https://i.ibb.co/ZYCJ32x/216666.png",
+  "https://i.ibb.co/6HSJGft/21777.png",
+ "https://i.ibb.co/QrCfQrX/188888.png",
+  "https://i.ibb.co/2vVvGTY/199999.png",
+  "https://i.ibb.co/X8Yn3CJ/2000.png",
+  "https://i.ibb.co/Y26WMyN/21111111.png"
 			
 ];
 var numberOfImg = path.length;
